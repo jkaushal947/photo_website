@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>JK's Photography Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <style type="text/css">
+        .contents {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        #container {
+            display: inline-block;
+            position: relative;
+            padding: 0.8rem;
+            width: 25%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            #container {
+                width: 50%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            #container {
+                width: 100%;
+            }
+        }
+
+        #container img {
+            width: 300px;
+            height: 200px;
+            border-radius: 5px;
+        }
+
+        #container .btn {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            font-family: 'Permanent Marker';
+            color: dimgray;
+            font-size: 14px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #container .btn:hover {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Landing Area -->
+    <div id="landing">
+        <div id="landing-text" class="landing-text animated">
+            <div id="landing-text-inner">
+                <h1>JK's Photography Website</h1>
+                <h2></h2>
+                <a href="#images" class="btn" id="view-photos">
+                    View Photos
+                </a>
+            </div>
+        </div>
+        <div id="landing-image" class="landing-image animated"></div>
+    </div>
+
+    <div id="images">
+        <div id="header">
+            <h2>Photos</h2>
+        </div>
+        <div class="contents">
+            <div id="container" class="wow zoomIn">
+                <img src="img/pokemon_plush.jpg" alt="Anime" class="wow zoomIn">
+                <a href="anime_exposure.html"><button class="btn">Anime Exposure</button></a>
+            </div>
+            <div id="container" class="wow zoomIn">
+                <img src="img/captain_america_shield.jpg" alt="Marvel" class="wow zoomIn">
+                <a href="marvel_mayhem.html">
+                    <button class="btn">Marvel Mayhem</button></a>
+            </div>
+            <div id="container" class="wow zoomIn">
+                <img src="img/20171201_151035.jpg" alt="Glassworks" class="wow zoomIn">
+                <a href="glassworks.html">
+                    <button class="btn">Glassworks</button></a>
+            </div>
+        </div>
+    </div>
+        <br />
+        <footer>
+            <h3>Contact Details</h3>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.1131235149455!2d-0.18030918468771548!3d51.60281581154385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487619f9c1f24c81%3A0x5fd6d30f3ca91d9f!2sClifton+Rd%2C+London+N3+2AR!5e0!3m2!1sen!2suk!4v1557840226115!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            <p>Name: <strong>Jeevaka Weerasena</strong></p>
+            <p>Email:
+                <strong>jkw5278@gmail.com</strong>
+            </p>
+            <p>Phone:
+                <strong>+44 7877 676754</strong>
+            </p>
+        </footer>
+
+
+        <script>
+            $('#view-work').on('click', function() {
+                const images = $('#images').position().top;
+
+                $('html, body').animate({
+                        scrollTop: images
+                    },
+                    900
+                );
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+</body>
+
+</html>
