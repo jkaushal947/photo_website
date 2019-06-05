@@ -13,6 +13,7 @@
     <style type="text/css">
         .contents {
             padding-top: 20px;
+            padding-bottom: 20px;
             text-align: center;
         }
 
@@ -61,6 +62,7 @@
             color: white;
             background-color: black;
         }
+
     </style>
 </head>
 
@@ -73,6 +75,9 @@
                 <h2></h2>
                 <a href="#images" class="btn" id="view-photos">
                     View Photos
+                </a>
+                <a href="#contact_details" class="btn" id="view-contact-details">
+                    Contact Details
                 </a>
             </div>
         </div>
@@ -98,11 +103,18 @@
                 <a href="glassworks.html">
                     <button class="btn">Glassworks</button></a>
             </div>
+            <div id="container" class="wow zoomIn">
+                <img src="img/bmw_i8.jpg" alt="Cars" class="wow zoomIn">
+                <a href="cars.html">
+                    <button class="btn">Cars</button></a>
+            </div>
         </div>
     </div>
-        <br />
+    <div id="contact_details">
+        <div id="header">
+            <h2>Contact Details</h2>
+        </div>
         <footer>
-            <h3>Contact Details</h3>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.1131235149455!2d-0.18030918468771548!3d51.60281581154385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487619f9c1f24c81%3A0x5fd6d30f3ca91d9f!2sClifton+Rd%2C+London+N3+2AR!5e0!3m2!1sen!2suk!4v1557840226115!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
             <p>Name: <strong>Jeevaka Weerasena</strong></p>
@@ -113,23 +125,26 @@
                 <strong>+44 7877 676754</strong>
             </p>
         </footer>
+    </div>
 
 
-        <script>
-            $('#view-work').on('click', function() {
-                const images = $('#images').position().top;
+    <script>
+        $('#view-work').on('click', function() {
+            const images = $('#images').position().top;
 
-                $('html, body').animate({
-                        scrollTop: images
-                    },
-                    900
-                );
-            });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-        <script>
-            new WOW().init();
-        </script>
+            $('html, body').animate({
+                    scrollTop: images
+                },
+                900
+            );
+        });
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
 </body>
 
 </html>

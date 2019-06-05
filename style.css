@@ -118,6 +118,11 @@ main {
     background: url('img/captain_america_shield.jpg')no-repeat 0 -365px;
 }
 
+#car_showcase {
+    min-height: 300px;
+    background: url('img/bmw_i8.jpg')no-repeat 0 -235px;
+}
+
 #info {
     text-align: center;
 }
