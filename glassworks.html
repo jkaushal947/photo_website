@@ -26,13 +26,13 @@
             padding-top: 10px;
             padding-bottom: 10px;
             text-align: center;
-            color: #888;
+            color: black;
         }
-        
-        .logo{
-            float:left;
-            width:180px;
-            height:180px;
+
+        .logo {
+            float: left;
+            width: 180px;
+            height: 180px;
         }
 
         .container {
@@ -77,157 +77,257 @@
                 width: 100%;
             }
         }
+
+        .modal {
+            z-index: 1;
+            display: none;
+            padding-top: 10px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.8)
+        }
+
+        .modal-content {
+            display: block;
+            top: auto;
+            left: auto;
+            right: auto;
+            bottom: auto;
+        }
+
+        .modal-content img {
+            max-height: 90vh;
+            width: auto;
+        }
+
+        .modal-hover-opacity {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -webkit-backface-visibility: hidden
+        }
+
+        .modal-hover-opacity:hover {
+            opacity: 0.60;
+            filter: alpha(opacity=60);
+            -webkit-backface-visibility: hidden
+        }
+
+
+        .close {
+            text-decoration: none;
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            color: white
+        }
+
+        .container1 {
+            display: inline-block;
+        }
+
+        .modal-content,
+        #caption {
+
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="logo"><img src="img/jks_photoworld.png"></div><h1>Glassworks</h1>
+    <div class="logo"><img src="img/jks_photoworld.png"></div>
+    <h1>Glassworks</h1>
     <section id="showcase"></section>
     <h2>Photos from London Glassblowing, Bremondsey Street, London</h2>
     <div class="container">
         <div id="responsive" class="wow zoomIn">
-            <div class="gallery"><a href="img/glassworks/20171012_162920_Richtone(HDR).jpg" target="_blank">
-                    <img src="img/glassworks/20171012_162920_Richtone(HDR).jpg" width="300" height="200"></a>
+            <div class="gallery">
+                <div class="container1">
+                    <img src="img/glassworks/20171012_162920_Richtone(HDR).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">Crushed Plastic Bottles</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
-            <div class="gallery"><a href="img/glassworks/20171110_151813_Richtone(HDR).jpg" target="_blank">
-                    <img src="img/glassworks/20171110_151813_Richtone(HDR).jpg" width="300" height="200"></a>
+            <div class="gallery">
+                <div class="container1">
+                    <img src="img/glassworks/20171110_151813_Richtone(HDR).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">Poppies by Peter Layton</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20171110_152028_Richtone(HDR).jpg" target="_blank">
-                    <img src="img/glassworks/20171110_152028_Richtone(HDR).jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20171110_152028_Richtone(HDR).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Reflections</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20171110_152038_Richtone(HDR).jpg" target="_blank">
-                    <img src="img/glassworks/20171110_152038_Richtone(HDR).jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20171110_152038_Richtone(HDR).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">Ceramics</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20170823_152702_Richtone(HDR).jpg" target="_blank">
-                    <img src="img/glassworks/20170823_152702_Richtone(HDR).jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20170823_152702_Richtone(HDR).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">Chess Pieces</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20171201_151050.jpg" target="_blank">
-                    <img src="img/glassworks/20171201_151050.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20171201_151050.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Devotion: Offerings by Louis Thompson</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20190509_132439.jpg" target="_blank">
-                    <img src="img/glassworks/20190509_132439.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20190509_132439.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Quill & Ink Group by Layne Rowe</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/IMG_3122.JPG" target="_blank">
-                    <img src="img/glassworks/IMG_3122.JPG" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/IMG_3122.JPG" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Tesseract by Tim Rawlinson</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20190509_132335.jpg" target="_blank">
-                    <img src="img/glassworks/20190509_132335.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20190509_132335.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Pastel Georgia by Peter Layton</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20180112_101006.jpg" target="_blank">
-                    <img src="img/glassworks/20180112_101006.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20180112_101006.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Monet by Peter Layton</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20180112_101012.jpg" target="_blank">
-                    <img src="img/glassworks/20180112_101012.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20180112_101012.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Perfume Bottles by Peter Layton</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20180112_101029.jpg" target="_blank">
-                    <img src="img/glassworks/20180112_101029.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20180112_101029.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Amber Glacier by Peter Layton</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20180209_151457.jpg" target="_blank">
-                    <img src="img/glassworks/20180209_151457.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20180209_151457.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Revealed Series by Laura McKinley</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20180209_151713.jpg" target="_blank">
-                    <img src="img/glassworks/20180209_151713.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20180209_151713.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Pollock by Peter Layton</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20180309_101343.jpg" target="_blank">
-                    <img src="img/glassworks/20180309_101343.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20180309_101343.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Still Movement by Monette Larsen</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20190509_131854.jpg" target="_blank">
-                    <img src="img/glassworks/20190509_131854.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20190509_131854.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Floral by Peter Layton</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20180420_163152.jpg" target="_blank">
-                    <img src="img/glassworks/20180420_163152.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20180420_163152.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Sunflower by Peter Layton</div>
             </div>
         </div>
         <div id="responsive" class="wow zoomIn">
             <div class="gallery">
-                <a href="img/glassworks/20180420_163240.jpg" target="_blank">
-                    <img src="img/glassworks/20180420_163240.jpg" width="300" height="200"></a>
+                <div class="container1">
+                    <img src="img/glassworks/20180420_163240.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
                 <div class="des">
                     Wheatfield & Highgrove by Peter Layton</div>
             </div>
         </div>
+
+        <div class="back_button">
+            <a href="index.html" class="btn" id="home_page">
+                Back to Home
+            </a>
+        </div>
+
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+            <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="modal-content">
+                <img id="img01" style="max-width:100%">
+            </div>
+        </div>
     </div>
-    <div class="back_button">
-        <a href="index.html" class="btn" id="home_page">
-            Back to Home
-        </a></div>
+
+    <script>
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
+    </script>
 
     <script>
         $('#view-work').on('click', function() {
