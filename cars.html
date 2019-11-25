@@ -36,27 +36,36 @@
             height: 180px;
         }
 
-        .container {
-            text-align: center;
+        div.gallery {
+            margin: 5px;
+            border: 1px;
+            /*float: left;*/
+            width: 180px;
+            padding: 0.8rem;
+            display: inline-block;
+            position: relative;
+            /*width: 25%;*/
+
         }
 
-        .gallery {
-            border: 1px solid #ccc;
+        div.gallery:hover {
+            border: 1px solid #777;
         }
 
-        .gallery img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            object-position: center center;
+        div.gallery img {
+            width: 100%;
+            height: auto;
         }
 
-        .des {
+        div.des {
             padding: 15px;
             text-align: center;
             font-size: 15px;
             font-family: 'Permanent Marker';
-            background-color: white;
+        }
+
+        .container {
+            text-align: center;
         }
 
         #responsive {
@@ -127,10 +136,6 @@
             color: white
         }
 
-        .container1 {
-            display: inline-block;
-        }
-
         .modal-content,
         #caption {
 
@@ -159,281 +164,314 @@
                 transform: scale(1)
             }
         }
-
     </style>
 </head>
 
 <body>
-    <div class="logo"><img src="img/jks_photoworld.png"></div>
+    <div class="logo"><a href="index.html"><img src="img/jks_photoworld.png"></a></div>
     <h1>Cars</h1>
     <section id="car_showcase"></section>
     <h2></h2>
     <div class="container">
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/aston_martin_v8_vantage.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Aston Martin V8 Vantage</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/aston_martin_vantage.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Aston Martin Vantage</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/cars/aston_martin_v8_vantage.jpg">
+                <img src="img/cars/aston_martin_v8_vantage.jpg" alt="Aston Martin V8 Vantage" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Aston Martin V8 Vantage</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/aston_martin_db9.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Aston Martin DB9</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/aston_martin_db9%20(1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Aston Martin DB9</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/cars/aston_martin_vantage.jpg">
+                <img src="img/cars/aston_martin_vantage.jpg" alt="Aston Martin Vantage" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Aston Martin Vantage</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/audi_a3.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Audi A3</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/cars/aston_martin_db9.jpg">
+                <img src="img/cars/aston_martin_db9.jpg" alt="Aston Martin DB9" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Aston Martin DB9</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/bmw_i8.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">BMW i8</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/bmw_i8%20(1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">BMW i8</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/ferrari_california.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Ferrari California</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/ferrari_california_t.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Ferrari California T</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/ferrari_ff.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Ferrari FF</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/cars/aston_martin_db9%20(1).jpg">
+                <img src="img/cars/aston_martin_db9%20(1).jpg" alt="Aston Martin DB9" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Aston Martin DB9</div>
         </div>
 
-       <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/ferrari_458.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Ferrari 458</div>
-            </div>
-        </div>
-       
-       <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/ferrari_458%20(1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Ferrari 458</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/ferrari_458%20(2).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Ferrari 458</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/ferrari_488.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Ferrari 488</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/ferrari_f12.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Ferrari F12</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/fiat_500.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Fiat 500</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/honda_accord.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Honda Accord</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/cars/aston_martin_vanquish.jpg">
+                <img src="img/cars/aston_martin_vanquish.jpg" alt="Aston Martin Vanquish" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Aston Martin Vanquish</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/jaguar_f-type.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Jaguar F-Type</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/cars/aston_martin_db11.jpg">
+                <img src="img/cars/aston_martin_db11.jpg" alt="Aston Martin DB11" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Aston Martin DB11</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/jaguar_xf.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Jaguar XF</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/cars/bmw_i8.jpg">
+                <img src="img/cars/bmw_i8.jpg" alt="BMW i8" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">BMW i8</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/jaguar_xk.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity">
-                </div>
-                <div class="des">Jaguar XK</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/cars/bmw_i8%20(1).jpg">
+                <img src="img/cars/bmw_i8%20(1).jpg" alt="BMW i8" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">BMW i8</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/lamborghini_gallardo.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Lamborghini Gallardo</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/lamborghini_huracan.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Lamborghini Huracan</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/lamborghini_aventador.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Lamborghini Aventador</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/lamborghini_aventador%20(1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Lamborghini Aventador</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/lamborghini_aventador%20(2).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Lamborghini Aventador</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/lexus_is.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Lexus IS</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/lotus_evora.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Lotus Evora</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/mercedes-benz_a-class.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Mercedes-Benz A-Class</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/mercedes-benz_e-class.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Mercedes-Benz E-Class</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/mercedes_amg_gt.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Mercedes AMG GT</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/mercedes-benz_sl-class.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Mercedes-Benz SL-Class</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/nissan_gtr.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Nissan GT-R</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/nissan_gtr%20(1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Nissan GT-R</div>
-            </div>
-        </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/nissan_gtr%20(2).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Nissan GT-R</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/cars/bmw_i8%20(2).jpg">
+                <img src="img/cars/bmw_i8%20(2).jpg" alt="BMW i8" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">BMW i8</div>
         </div>
 
-       <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/porsche_911_gt3_rs.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Porsche 911 GT3 RS</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/cars/bmw_i8%20(3).jpg">
+                <img src="img/cars/bmw_i8%20(3).jpg" alt="BMW i8" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">BMW i8</div>
         </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/porsche_panamera.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Porsche Panamera</div>
-            </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/chevrolet_camaro.jpg">
+                <img src="img/cars/chevrolet_camaro.jpg" alt="Chevrolet Camaro" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chevrolet Camaro</div>
         </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/toyota_gt86.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Toyota GT-86</div>
-            </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/chevrolet_camaro%20(1).jpg">
+                <img src="img/cars/chevrolet_camaro%20(1).jpg" alt="Chevrolet Camaro" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chevrolet Camaro</div>
         </div>
-        
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/cars/volvo_xc60.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Volvo XC60</div>
-            </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/ferrari_california.jpg">
+                <img src="img/cars/ferrari_california.jpg" alt="Ferrari California" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Ferrari California</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/ferrari_california_t.jpg">
+                <img src="img/cars/ferrari_california_t.jpg" alt="Ferrari California T" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Ferrari California T</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/ferrari_ff.jpg">
+                <img src="img/cars/ferrari_ff.jpg" alt="Ferrari FF" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Ferrari FF</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/ferrari_458.jpg">
+                <img src="img/cars/ferrari_458.jpg" alt="Ferrari 458" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Ferrari 458</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/ferrari_458%20(1).jpg">
+                <img src="img/cars/ferrari_458%20(1).jpg" alt="Ferrari 458" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Ferrari 458</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/ferrari_458%20(2).jpg">
+                <img src="img/cars/ferrari_458%20(2).jpg" alt="Ferrari 458" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Ferrari 458</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/ferrari_488.jpg">
+                <img src="img/cars/ferrari_488.jpg" alt="Ferrari 488" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Ferrari 488</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/ferrari_488%20(1).jpg">
+                <img src="img/cars/ferrari_488%20(1).jpg" alt="Ferrari 488" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Ferrari 488</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/ferrari_f12.jpg">
+                <img src="img/cars/ferrari_f12.jpg" alt="Ferrari F12" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Ferrari F12</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/fiat_500.jpg">
+                <img src="img/cars/fiat_500.jpg" alt="Fiat 500" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Fiat 500</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/jaguar_f-type.jpg">
+                <img src="img/cars/jaguar_f-type.jpg" alt="Jaguar F-Type" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Jaguar F-Type</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/jaguar_xk.jpg">
+                <img src="img/cars/jaguar_xk.jpg" alt="Jaguar XK" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Jaguar XK</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/lamborghini_gallardo.jpg">
+                <img src="img/cars/lamborghini_gallardo.jpg" alt="Lamborghini Gallardo" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Lamborghini Gallardo</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/lamborghini_huracan.jpg">
+                <img src="img/cars/lamborghini_huracan.jpg" alt="Lamborghini Huracan" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Lamborghini Huracan</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/lamborghini_aventador.jpg">
+                <img src="img/cars/lamborghini_aventador.jpg" alt="Lamborghini Aventador" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Lamborghini Aventador</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/lamborghini_aventador%20(1).jpg">
+                <img src="img/cars/lamborghini_aventador%20(1).jpg" alt="Lamborghini Aventador" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Lamborghini Aventador</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/lamborghini_aventador%20(2).jpg">
+                <img src="img/cars/lamborghini_aventador%20(2).jpg" alt="Lamborghini Aventador" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Lamborghini Aventador</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/lamborghini_aventador_roadster.jpg">
+                <img src="img/cars/lamborghini_aventador_roadster.jpg" alt="Lamborghini Aventador Roadster" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Lamborghini Aventador Roadster</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/lotus_espirit.jpg">
+                <img src="img/cars/lotus_espirit.jpg" alt="Lotus Espirit" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Lotus Espirit</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/lotus_evora.jpg">
+                <img src="img/cars/lotus_evora.jpg" alt="Lotus Evora" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Lotus Evora</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/lotus_evora%20(1).jpg">
+                <img src="img/cars/lotus_evora%20(1).jpg" alt="Lotus Evora" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Lotus Evora</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/mercedes_amg_gt.jpg">
+                <img src="img/cars/mercedes_amg_gt.jpg" alt="Mercedes AMG GT" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Mercedes AMG GT</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/mercedes-benz_sl-class.jpg">
+                <img src="img/cars/mercedes-benz_sl-class.jpg" alt="Mercedes-Benz SL-Class" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Mercedes-Benz SL-Class</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/nissan_370z.jpg">
+                <img src="img/cars/nissan_370z.jpg" alt="Nissan 370Z" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Nissan 370Z</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/nissan_gtr.jpg">
+                <img src="img/cars/nissan_gtr.jpg" alt="Nissan GT-R" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Nissan GT-R</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/nissan_gtr%20(1).jpg">
+                <img src="img/cars/nissan_gtr%20(1).jpg" alt="Nissan GT-R" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Nissan GT-R</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/nissan_gtr%20(2).jpg">
+                <img src="img/cars/nissan_gtr%20(2).jpg" alt="Nissan GT-R" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Nissan GT-R</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/porsche_911.jpg">
+                <img src="img/cars/porsche_911.jpg" alt="Porsche 911" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Porsche 911</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/porsche_911_gt3_rs.jpg">
+                <img src="img/cars/porsche_911_gt3_rs.jpg" alt="Porsche 911 GT3 RS" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Porsche 911 GT3 RS</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/toyota_gt86.jpg">
+                <img src="img/cars/toyota_gt86.jpg" alt="Toyota GT-86" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Toyota GT-86</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/cars/toyota_gt86%20(1).jpg">
+                <img src="img/cars/toyota_gt86%20(1).jpg" alt="Toyota GT-86" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Toyota GT-86</div>
         </div>
 
         <div class="back_button">
@@ -455,7 +493,6 @@
             document.getElementById("img01").src = element.src;
             document.getElementById("modal01").style.display = "block";
         }
-
     </script>
 
     <script>
@@ -468,13 +505,9 @@
                 900
             );
         });
-
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script>
         new WOW().init();
-
     </script>
-</body>
-
-</html>
+</body></html>

@@ -33,7 +33,7 @@ h3 {
 img {
     margin: auto;
     display: block;
-    width: 50%;
+    width: 70%;
 }
 
 main {
@@ -110,17 +110,17 @@ main {
 
 #anime_showcase {
     min-height: 300px;
-    background: url('img/pokemon_plush.jpg')no-repeat 0 -215px;
+    background: url('img/pokemon_plush_1.jpg')no-repeat 0 -215px;
 }
 
 #marvel_showcase {
     min-height: 300px;
-    background: url('img/captain_america_shield.jpg')no-repeat 0 -365px;
+    background: url('img/captain_america_shield_1.jpg')no-repeat 0 -365px;
 }
 
 #car_showcase {
     min-height: 300px;
-    background: url('img/bmw_i8.jpg')no-repeat 0 -235px;
+    background: url('img/bmw_i8_1.jpg')no-repeat 0 -235px;
 }
 
 #info {
@@ -195,14 +195,6 @@ footer h3 {
     margin: auto;
     float: right;
 }
-
-/*.polaroid {
-    margin: auto;
-    width: 50%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-}*/
 
 .back_button{
     text-align: center;

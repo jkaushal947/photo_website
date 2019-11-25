@@ -28,27 +28,37 @@
             height: 180px;
         }
 
-        .container {
-            text-align: center;
+        div.gallery {
+            margin: 5px;
+            border: 1px;
+            /*float: left;*/
+            width: 180px;
+            padding: 0.8rem;
+            display: inline-block;
+            position: relative;
+            /*width: 25%;*/
+
         }
 
-        .gallery {
-            border: 1px solid #ccc;
+        div.gallery:hover {
+            border: 1px solid #777;
         }
 
-        .gallery img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            object-position: center center;
+        div.gallery img {
+            width: 100%;
+            height: auto;
         }
 
-        .des {
+        div.des {
             padding: 15px;
             text-align: center;
             font-size: 15px;
             font-family: 'Permanent Marker';
-            background-color: white;
+        }
+
+
+        .container {
+            text-align: center;
         }
 
         #responsive {
@@ -119,10 +129,6 @@
             color: white
         }
 
-        .container1 {
-            display: inline-block;
-        }
-
         .modal-content,
         #caption {
 
@@ -156,109 +162,113 @@
 </head>
 
 <body>
-    <div class="logo"><img src="img/jks_photoworld.png"></div>
+    <div class="logo"><a href="index.html"><img src="img/jks_photoworld.png"></a></div>
     <h1>Marvel Mayhem</h1>
     <section id="marvel_showcase"></section>
     <h2></h2>
     <div class="container">
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/iron_man.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Iron Man</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/iron_man.jpg">
+                <img src="img/marvel/iron_man.jpg" alt="Iron Man" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Iron Man</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/iron_man_armors%20(1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Iron Man</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/iron_man_armors%20(1).jpg">
+                <img src="img/marvel/iron_man_armors%20(1).jpg" alt="Iron Man" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Iron Man</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/iron_man_armors%20(2).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Iron Man</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/iron_man_armors%20(2).jpg">
+                <img src="img/marvel/iron_man_armors%20(2).jpg" alt="Iron Man" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Iron Man</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/spiderman.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Spiderman</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/captain_america_shield.jpg">
+                <img src="img/marvel/captain_america_shield.jpg" alt="Iron Man" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Captain America's Shield</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/spiderman%20(1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Spiderman</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/spiderman.jpg">
+                <img src="img/marvel/spiderman.jpg" alt="Spiderman" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Spiderman</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/spiderman%20(2).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Spiderman</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/spiderman%20(1).jpg">
+                <img src="img/marvel/spiderman%20(1).jpg" alt="Spiderman" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Spiderman</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/spiderman%20(3).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Spiderman</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/spiderman%20(2).JPG">
+                <img src="img/marvel/spiderman%20(2).JPG" alt="Spiderman" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Spiderman</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/giant_man.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Giant Man</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/spiderman%20(3).JPG">
+                <img src="img/marvel/spiderman%20(3).JPG" alt="Spiderman" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Spiderman</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/deadpool.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Deadpool</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/spiderman%20(4).jpg">
+                <img src="img/marvel/spiderman%20(4).jpg" alt="Spiderman" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Spiderman</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/deadpool%20(1).JPG" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Deadpool</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/misc_heroes.jpg">
+                <img src="img/marvel/misc_heroes.jpg" alt="Agent Venom & Kid Arachnid" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Agent Venom & Kid Arachnid</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/falcon_wasp.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Falcon & Wasp</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/giant_man.jpg">
+                <img src="img/marvel/giant_man.jpg" alt="Giant Man" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Giant Man</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/black_panther.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Black Panther</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/deadpool.jpg">
+                <img src="img/marvel/deadpool.jpg" alt="Deadpool" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Deadpool</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/guardians_of_the_galaxy.JPG" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Star-Lord, Rocket Raccoon & Groot (Guardians of The Galaxy)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/deadpool%20(1).JPG">
+                <img src="img/marvel/deadpool%20(1).JPG" alt="Deadpool" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Deadpool</div>
         </div>
-
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/marvel/mjolnir.JPG" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Mjolnir</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/falcon_wasp.jpg">
+                <img src="img/marvel/falcon_wasp.jpg" alt="Falcon & The Wasp" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Falcon & The Wasp</div>
         </div>
-
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/black_panther.jpg">
+                <img src="img/marvel/black_panther.jpg" alt="Black Panther" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Black Panther</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/guardians_of_the_galaxy.JPG">
+                <img src="img/marvel/guardians_of_the_galaxy.JPG" alt="Star-Lord, Rocket Raccoon & Groot" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Star-Lord, Rocket Raccoon & Groot (Guardians of The Galaxy)</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="img/marvel/mjolnir.JPG">
+                <img src="img/marvel/mjolnir.JPG" alt="Mjolnir" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Mjolnir</div>
+        </div>
         <div class="back_button">
             <a href="index.html" class="btn" id="home_page">
                 Back to Home

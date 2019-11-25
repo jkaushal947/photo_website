@@ -36,27 +36,40 @@
             height: 180px;
         }
 
-        .container {
-            text-align: center;
+        .logo img {
+            width: 50%;
         }
 
-        .gallery {
-            border: 1px solid #ccc;
+        div.gallery {
+            margin: 5px;
+            border: 1px;
+            /*float: left;*/
+            width: 180px;
+            padding: 0.8rem;
+            display: inline-block;
+            position: relative;
+            /*width: 25%;*/
+
         }
 
-        .gallery img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            object-position: center center;
+        div.gallery:hover {
+            border: 1px solid #777;
         }
 
-        .des {
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.des {
             padding: 15px;
             text-align: center;
             font-size: 15px;
             font-family: 'Permanent Marker';
-            background-color: white;
+        }
+
+        .container {
+            text-align: center;
         }
 
         #responsive {
@@ -127,10 +140,6 @@
             color: white
         }
 
-        .container1 {
-            display: inline-block;
-        }
-
         .modal-content,
         #caption {
 
@@ -159,246 +168,322 @@
                 transform: scale(1)
             }
         }
+
     </style>
 </head>
 
 <body>
-    <div class="logo"><img src="img/jks_photoworld.png"></div>
+    <div class="logo"><a href="index.html"><img src="img/jks_photoworld.png"></a></div>
     <h1>Anime Exposure</h1>
     <section id="anime_showcase"></section>
     <h2>As I have interest for Anime, I have attended a few events where they have various die cast models of popular Anime characters on display.</h2>
     <div class="container">
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/goku.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Goku (Dragon Ball)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/goku.jpg">
+                <img src="img/anime/goku.jpg" alt="Goku" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Goku (Dragon Ball)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/goku (1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Goku (Dragon Ball)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/goku%20(1).jpg">
+                <img src="img/anime/goku%20(1).jpg" alt="Goku" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Goku (Dragon Ball)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/goku (2).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Goku (Dragon Ball)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/goku%20(2).jpg">
+                <img src="img/anime/goku%20(2).jpg" alt="Goku" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Goku (Dragon Ball)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/dragon_balls.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Dragon Balls (Dragon Ball)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/goku%20(3).JPG">
+                <img src="img/anime/goku%20(3).JPG" alt="Goku" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Goku (Dragon Ball)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/sailor_scouts.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Sailor Mars, Sailor Jupiter & Sailor Mercury (Sailor Moon)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/dragon_balls.jpg">
+                <img src="img/anime/dragon_balls.jpg" alt="Dragon Balls" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Dragon Balls (Dragon Ball)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/pikachu.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Pikachu (Pokemon)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/sailor_scouts.jpg">
+                <img src="img/anime/sailor_scouts.jpg" alt="Salior Scouts" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Sailor Mars, Sailor Jupiter & Sailor Mercury (Sailor Moon)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/pikachu%20(1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Pikachu (Pokemon)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/pikachu.jpg">
+                <img src="img/anime/pikachu.jpg" alt="Pikachu" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Pikachu (Pokemon)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/pokemon.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity">
-                </div>
-                <div class="des">Various Pokemon</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/pikachu%20(1).jpg">
+                <img src="img/anime/pikachu%20(1).jpg" alt="Pikachu" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Pikachu (Pokemon)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/wargreymon.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">WarGreymon (Digimon)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/pokemon.jpg">
+                <img src="img/anime/pokemon.jpg" alt="Various Pokemon" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Various Pokemon</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/asuka_langley.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Asuka Langely (Evangelion)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/wargreymon.jpg">
+                <img src="img/anime/wargreymon.jpg" alt="WarGreymon" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">WarGreymon (Digimon)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/evangelion.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Evangelion</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/asuka_langley.jpg">
+                <img src="img/anime/asuka_langley.jpg" alt="Asuka Langely" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Asuka Langely (Evangelion)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1">
-                    <img src="img/anime/miku_hatsune.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Miku Hatsune</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/asuka_langley%20(1).JPG">
+                <img src="img/anime/asuka_langley%20(1).JPG" alt="Asuka Langely" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Asuka Langely (Evangelion)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/miku_hatsune%20(1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Miku Hatsune</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/evangelion.jpg">
+                <img src="img/anime/evangelion.jpg" alt="Evangelion" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Evangelion</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/roy_mustang.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Roy Mustang (Fullmetal Alchemist)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/evangelion%20(1).JPG">
+                <img src="img/anime/evangelion%20(1).JPG" alt="Evangelion" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Evangelion</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/saber.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Saber (Fate series)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/evangelion.jpg">
+                <img src="img/anime/evangelion.jpg" alt="Evangelion" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Evangelion</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/saber (1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Saber (Fate series)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/evangelion%20(1).JPG">
+                <img src="img/anime/evangelion%20(1).JPG" alt="Evangelion" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Evangelion</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/saitama.JPG" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Saitama (One Punch Man)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/miku_hatsune.jpg">
+                <img src="img/anime/miku_hatsune.jpg" alt="Miku Hatsune" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Miku Hatsune</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/saitama%20(1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Saitama (One Punch Man)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/miku_hatsune%20(1).jpg">
+                <img src="img/anime/miku_hatsune%20(1).jpg" alt="Miku Hatsune" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Miku Hatsune</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/aqua_megumin.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Aqua & Megumin (Konosuba)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/edward_elric.jpg">
+                <img src="img/anime/edward_elric.jpg" alt="Edward Elric" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Edward Elric (Fullmetal Alchemist)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/sakura_kero.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Sakura Kinomoto & Cerberus (Cardcaptor Sakura)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/roy_mustang.jpg">
+                <img src="img/anime/roy_mustang.jpg" alt="Roy Mustang" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Roy Mustang (Fullmetal Alchemist)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/mizuki_tomoyo.JPG" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Mizuki Himeji (Baka & Test) & Tomoyo Daidouji (Cardcaptor Sakura)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/edward_elric_winry_rockbell.JPG">
+                <img src="img/anime/edward_elric_winry_rockbell.JPG" alt="Edward Elric & Winry Rockbell" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Edward Elric & Winry Rockbell (Fullmetal Alchemist)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/sinon.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Sinon (Sword Art Online)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/rin_tohsaka.JPG">
+                <img src="img/anime/rin_tohsaka.JPG" alt="Rin Tohsaka" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Rin Tohsaka (Fate series)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/sword_art_online.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Sword Art Online</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/saber.jpg">
+                <img src="img/anime/saber.jpg" alt="Saber" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Saber (Fate series)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/kirito_saitama.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Kirito (Sword Art Online) & Saitama (One Punch Man)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/saber%20(1).jpg">
+                <img src="img/anime/saber%20(1).jpg" alt="Saber" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Saber (Fate series)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/optimus_prime.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Optimus Prime (Transformers)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/saitama.JPG">
+                <img src="img/anime/saitama.JPG" alt="Saitama" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Saitama (One Punch Man)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/haruhi_suzumiya.JPG" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Haruhi Suzumiya (The Melancholy of Haruhi Suzumiya)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/saitama%20(1).jpg">
+                <img src="img/anime/saitama%20(1).jpg" alt="Saitama" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Saitama (One Punch Man)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/rem.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Rem (Re Zero)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/saitama%20(2).JPG">
+                <img src="img/anime/saitama%20(2).JPG" alt="Saitama" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Saitama (One Punch Man)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/ram_rem.JPG" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Ram & Rem (Re Zero)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/aqua_megumin.jpg">
+                <img src="img/anime/aqua_megumin.jpg" alt="Aqua & Megumin" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Aqua & Megumin (Konosuba)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/yuri_nakamura.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Yuri Nakamura (Angel Beats)</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/sakura_kero.jpg">
+                <img src="img/anime/sakura_kero.jpg" alt="Sakura Kinomoto & Cerberus" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Sakura Kinomoto & Cerberus (Cardcaptor Sakura)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/mobile_suit_gundam.jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Mobile Suit Gundam</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/mizuki_tomoyo.JPG">
+                <img src="img/anime/mizuki_tomoyo.JPG" alt="Mizuki Himeji & Tomoyo Daidouji" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Mizuki Himeji (Baka & Test) & Tomoyo Daidouji (Cardcaptor Sakura)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/mobile_suit_gundam (1).jpg" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Mobile Suit Gundam</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/sinon.jpg">
+                <img src="img/anime/sinon.jpg" alt="Sinon" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Sinon (Sword Art Online)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/mobile_suit_gundam%20(2).JPG" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Mobile Suit Gundam</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/sinon%20(1).JPG">
+                <img src="img/anime/sinon%20(1).JPG" alt="Sinon" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Sinon (Sword Art Online)</div>
         </div>
 
-        <div id="responsive" class="wow zoomIn">
-            <div class="gallery">
-                <div class="container1"><img src="img/anime/mobile_suit_gundam%20(3).JPG" width="300" height="200" onclick="onClick(this)" class="modal-hover-opacity"></div>
-                <div class="des">Mobile Suit Gundam</div>
-            </div>
+        <div class="gallery">
+            <a target="_blank" href="img/anime/sword_art_online.jpg">
+                <img src="img/anime/sword_art_online.jpg" alt="Sword Art Online" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Sword Art Online</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/anime/kirito_saitama.jpg">
+                <img src="img/anime/kirito_saitama.jpg" alt="Kirito & Saitama" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Kirito (Sword Art Online) & Saitama (One Punch Man)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/anime/haruhi_suzumiya.JPG">
+                <img src="img/anime/haruhi_suzumiya.JPG" alt="Haruhi Suzumiya" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Haruhi Suzumiya (The Melancholy of Haruhi Suzumiya)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/anime/rem.jpg">
+                <img src="img/anime/rem.jpg" alt="Rem" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Rem (Re Zero)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/anime/ram_rem.JPG">
+                <img src="img/anime/ram_rem.JPG" alt="Rem" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Ram & Rem (Re Zero)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/anime/yuri_nakamura.jpg">
+                <img src="img/anime/yuri_nakamura.jpg" alt="Yuri Nakamura" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Yuri Nakamura (Angel Beats)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/anime/my_hero_academia.JPG">
+                <img src="img/anime/my_hero_academia.JPG" alt="Katsuki Bakugo, Shōto Todoroki, Izuku Midoriya & All Might" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Katsuki Bakugo, Shōto Todoroki, Izuku Midoriya & All Might (My Hero Academia)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/anime/my_neighbor_totoro.jpg">
+                <img src="img/anime/my_neighbor_totoro.jpg" alt="My Neighbor Totoro" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">My Neighbor Totoro</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/anime/mobile_suit_gundam.jpg">
+                <img src="img/anime/mobile_suit_gundam.jpg" alt="Mobile Suit Gundam" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Mobile Suit Gundam</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/anime/mobile_suit_gundam%20(1).jpg">
+                <img src="img/anime/mobile_suit_gundam%20(1).jpg" alt="Mobile Suit Gundam" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Mobile Suit Gundam</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/anime/mobile_suit_gundam%20(2).JPG">
+                <img src="img/anime/mobile_suit_gundam%20(2).JPG" alt="Mobile Suit Gundam" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Mobile Suit Gundam</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/anime/mobile_suit_gundam%20(3).JPG">
+                <img src="img/anime/mobile_suit_gundam%20(3).JPG" alt="Mobile Suit Gundam" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Mobile Suit Gundam</div>
         </div>
 
         <div class="back_button">
@@ -420,6 +505,7 @@
             document.getElementById("img01").src = element.src;
             document.getElementById("modal01").style.display = "block";
         }
+
     </script>
 
     <script>
@@ -432,10 +518,12 @@
                 900
             );
         });
+
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script>
         new WOW().init();
+
     </script>
 </body>
 
