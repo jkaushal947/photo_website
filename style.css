@@ -123,6 +123,11 @@ main {
     background: url('img/bmw_i8_1.jpg')no-repeat 0 -235px;
 }
 
+#light_showcase {
+    min-height: 300px;
+    background: url('img/first_direct_arena_1.jpg')no-repeat 0 -215px;
+}
+
 #info {
     text-align: center;
 }
