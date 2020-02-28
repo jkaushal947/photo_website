@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>JK's Photoworld - Luminous Lights</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="icon" href="img/jks_photoworld.png">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        h1 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: black;
+        }
+
+        .logo {
+            float: left;
+            width: 180px;
+            height: 180px;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px;
+            /*float: left;*/
+            width: 180px;
+            padding: 0.8rem;
+            display: inline-block;
+            position: relative;
+            /*width: 25%;*/
+
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.des {
+            padding: 15px;
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Permanent Marker';
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #responsive {
+            padding: 0.8rem;
+            display: inline-block;
+            position: relative;
+            width: 25%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            #responsive {
+                width: 50%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            #responsive {
+                width: 100%;
+            }
+        }
+
+        .modal {
+            z-index: 1;
+            display: none;
+            padding-top: 10px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.8)
+        }
+
+        .modal-content {
+            display: block;
+            top: auto;
+            left: auto;
+            right: auto;
+            bottom: auto;
+        }
+
+        .modal-content img {
+            max-height: 90vh;
+            width: auto;
+        }
+
+        .modal-hover-opacity {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -webkit-backface-visibility: hidden
+        }
+
+        .modal-hover-opacity:hover {
+            opacity: 0.60;
+            filter: alpha(opacity=60);
+            -webkit-backface-visibility: hidden
+        }
+
+
+        .close {
+            text-decoration: none;
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            color: white
+        }
+
+        .modal-content,
+        #caption {
+
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="logo"><a href="index.html"><img src="img/jks_photoworld.png"></a></div>
+    <h1>Luminous Lights</h1>
+    <section id="light_showcase"></section>
+    <h2>Photos from different light events across the UK</h2>
+    <div class="container">
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/P1410219.JPG">
+                <img src="img/luminous_lights/P1410219.JPG" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Leeds City Museum, Leeds - Leeds Light Festival 2014</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/P1410225.JPG">
+                <img src="img/luminous_lights/P1410225.JPG" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Leeds City Museum, Leeds - Leeds Light Festival 2014</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20141003_193955.jpg">
+                <img src="img/luminous_lights/20141003_193955.jpg" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Civic Hall, Leeds - Leeds Light Festival 2014</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20141003_213050.jpg">
+                <img src="img/luminous_lights/20141003_213050.jpg" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Civic Hall, Leeds - Leeds Light Festival 2014</div>
+        </div>
+        
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20161007_185452jpg">
+                <img src="img/luminous_lights/20161007_185452.jpg" alt="Leeds Light Festival 2016" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">First Direct Arena, Leeds - Leeds Light Festival 2016</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20161007_193203_LLS.jpg">
+                <img src="img/luminous_lights/20161007_193203_LLS.jpg" alt="Leeds Light Festival 2016" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Civic Hall, Leeds - Leeds Light Festival 2016</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20161007_193713.jpg">
+                <img src="img/luminous_lights/20161007_193713.jpg" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Civic Hall, Leeds - Leeds Light Festival 2016</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20161007_193801.jpg">
+                <img src="img/luminous_lights/20161007_193801.jpg" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Civic Hall, Leeds - Leeds Light Festival 2016</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20161007_194834.jpg">
+                <img src="img/luminous_lights/20161007_194834.jpg" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Civic Hall, Leeds - Leeds Light Festival 2016</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/P1660950.JPG">
+                <img src="img/luminous_lights/P1660950.JPG" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Civic Hall, Leeds - Leeds Light Festival 2016</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/P1660965.JPG">
+                <img src="img/luminous_lights/P1660965.JPG" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Civic Hall, Leeds - Leeds Light Festival 2016</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/P1660977.JPG">
+                <img src="img/luminous_lights/P1660977.JPG" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Civic Hall, Leeds - Leeds Light Festival 2016</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/P1660986.JPG">
+                <img src="img/luminous_lights/P1660986.JPG" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Civic Hall, Leeds - Leeds Light Festival 2016</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20161007_192244_LLS.jpg">
+                <img src="img/luminous_lights/20161007_192244_LLS.jpg" alt="Leeds Light Festival 2014" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Leeds City Museum, Leeds - Leeds Light Festival 2016</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_1767.JPG">
+                <img src="img/luminous_lights/IMG_1767.JPG" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_1775.JPG">
+                <img src="img/luminous_lights/IMG_1775.JPG" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_1789.JPG">
+                <img src="img/luminous_lights/IMG_1789.JPG" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20171227_173206.jpg">
+                <img src="img/luminous_lights/20171227_173206.jpg" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20171227_173417.jpg">
+                <img src="img/luminous_lights/20171227_173417.jpg" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20171227_173430.jpg">
+                <img src="img/luminous_lights/20171227_173430.jpg" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20171227_174023.jpg">
+                <img src="img/luminous_lights/20171227_174023.jpg" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20171227_181747.jpg">
+                <img src="img/luminous_lights/20171227_181747.jpg" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20171227_183147.jpg">
+                <img src="img/luminous_lights/20171227_183147.jpg" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20171227_183541.jpg">
+                <img src="img/luminous_lights/20171227_183541.jpg" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20171227_183555.jpg">
+                <img src="img/luminous_lights/20171227_183555.jpg" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20171227_185218.jpg">
+                <img src="img/luminous_lights/20171227_185218.jpg" alt="Lightopia Festival London 2017" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2017</div>
+        </div>
+        
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20191122_191902.jpg">
+                <img src="img/luminous_lights/20191122_191902.jpg" alt="Winterfest Lights 2019" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Wembley Arena - Winterfest Lights 2019</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_3924.JPG">
+                <img src="img/luminous_lights/IMG_3924.JPG" alt="Winter Lights Festival 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Canary Wharf - Winter Lights Festival 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_3938.JPG">
+                <img src="img/luminous_lights/IMG_3938.JPG" alt="Winter Lights Festival 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Canary Wharf - Winter Lights Festival 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20200118_175316.jpg">
+                <img src="img/luminous_lights/20200118_175316.jpg" alt="Winter Lights Festival 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Canary Wharf - Winter Lights Festival 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20200118_185129.jpg">
+                <img src="img/luminous_lights/20200118_185129.jpg" alt="Winter Lights Festival 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Canary Wharf - Winter Lights Festival 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20200118_193347.jpg">
+                <img src="img/luminous_lights/20200118_193347.jpg" alt="Winter Lights Festival 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Canary Wharf - Winter Lights Festival 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4054.JPG">
+                <img src="img/luminous_lights/IMG_4054.JPG" alt="Winter Lights Festival 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Canary Wharf - Winter Lights Festival 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4064.JPG">
+                <img src="img/luminous_lights/IMG_4064.JPG" alt="Winter Lights Festival 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Canary Wharf - Winter Lights Festival 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4110.JPG">
+                <img src="img/luminous_lights/IMG_4110.JPG" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4113.JPG">
+                <img src="img/luminous_lights/IMG_4113.JPG" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20200124_170946.jpg">
+                <img src="img/luminous_lights/20200124_170946.jpg" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4114.JPG">
+                <img src="img/luminous_lights/IMG_4114.JPG" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4133.JPG">
+                <img src="img/luminous_lights/IMG_4133.JPG" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20200124_175427.jpg">
+                <img src="img/luminous_lights/20200124_175427.jpg" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4184.JPG">
+                <img src="img/luminous_lights/IMG_4184.JPG" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4188.JPG">
+                <img src="img/luminous_lights/IMG_4188.JPG" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20200124_180026.jpg">
+                <img src="img/luminous_lights/20200124_180026.jpg" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4192.JPG">
+                <img src="img/luminous_lights/IMG_4192.JPG" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4193.JPG">
+                <img src="img/luminous_lights/IMG_4193.JPG" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20200124_180943.jpg">
+                <img src="img/luminous_lights/20200124_180943.jpg" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4240.JPG">
+                <img src="img/luminous_lights/IMG_4240.JPG" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/IMG_4245.JPG">
+                <img src="img/luminous_lights/IMG_4245.JPG" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img/luminous_lights/20200124_183134.jpg">
+                <img src="img/luminous_lights/20200124_183134.jpg" alt="Lightopia Festival London 2020" width="600" height="400" class="wow zoomIn">
+            </a>
+            <div class="des">Chiswick House Gardens - Lightopia Festival London 2020</div>
+        </div>
+        <div class="back_button">
+            <a href="index.html" class="btn" id="home_page">
+                Back to Home
+            </a>
+        </div>
+
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+            <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="modal-content">
+                <img id="img01" style="max-width:100%">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
+
+    </script>
+
+    <script>
+        $('#view-work').on('click', function() {
+            const images = $('#images').position().top;
+
+            $('html, body').animate({
+                    scrollTop: images
+                },
+                900
+            );
+        });
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
+</body>
+
+</html>
